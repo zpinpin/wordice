@@ -1,0 +1,75 @@
+body {
+    background-image: url('IMG_2191.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1, h2, p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.container {
+    text-align: center;
+}
+
+#dice-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.dice {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #FF68B4;
+    transition: transform 0.3s ease;
+}
+
+.dice:hover {
+    transform: scale(1.05);
+}
+.hotpink {
+    color: #FF68B4;
+}
+#roll-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#roll-button:hover {
+    background-color: #45a049;
+}
+
+@keyframes roll {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
