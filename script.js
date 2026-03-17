@@ -6,7 +6,6 @@ const words = [
   "car", "bird", "fish", "sun", "moon", "star", "flower", "apple", "water", "food"
 ];
 
-
 function getRandomWord() {
     return words[Math.floor(Math.random() * words.length)];
 }
